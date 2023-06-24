@@ -5,6 +5,10 @@ body{
   font-family: "muli";
   src: url("font/muli-regular-webfont.woff") format("woff");
 }
+@font-face {
+  font-family: "Rubik";
+  src: url("font/rubik-regular-webfont") format("woff");
+	  }
 .m1{
 	background-image:url("img/body/f1.jpg");
 	background-attachment:fixed;
