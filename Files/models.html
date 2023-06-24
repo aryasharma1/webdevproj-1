@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Slider</title>
+    <link rel="stylesheet" type="text/css" href="models.css">
+</head>
+
+<body>
+    <div class="container blue circleBehind">
+        <center>
+            <img src="img/body/logo.jpg">
+            <a href="web.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="models.html">MODELS</a>
+            <a href="service.html">SERVICE</a>
+            <a href="mailto:aryasharma069@gmail.com">CONTACT</a>
+        </center>
+    </div><br><br><br><br><br>
+    <div class="slidercontainer">
+        <div class="showSlide fade">
+            <img src="img/body/aspire.jpg" height=394px width=965px />
+            <div class="content"></div>
+        </div>
+        <div class="showSlide fade">
+            <img src="img/body/mustang.jpg" />
+            <div class="content"></div>
+        </div>
+
+        <div class="showSlide fade">
+            <img src="img/body/ecosport.jpg" />
+            <div class="content"></div>
+        </div>
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+    </div> <br><br><br>
+    <a href="aspire.html">
+        <div class="aspire">
+            <img src="img/body/aslogo.jpg">
+            <h3 style=" border-bottom:1px solid black; width:220px;">Aspire</h3>
+            <div class="desc">
+                Starting from : Rs 5,55,000 <br>
+                Fuel Economy (P): 20.4 km/l<br>
+                Fuel Economy (D): 26.1 km/l
+
+            </div>
+        </div>
+    </a>
+    <a href="mustang.html">
+        <div class="mustang">
+            <img src="img/body/muslogo.jpg">
+            <h3 style=" border-bottom:1px solid black; width:220px;">Mustang</h3>
+            <div class="desc">
+                Starting from : Rs 74,62,000 <br>
+                Fuel Economy (P): 7.91 km/l<br>
+                Fuel Economy (D): N/A km/l
+
+            </div>
+        </div>
+    </a>
+    <a href="ecosport.html">
+        <div class="ecosport">
+            <img src="img/body/ecologo.jpeg">
+            <h3 style=" border-bottom:1px solid black; width:220px;">Ecosport</h3>
+            <div class="desc">
+                Starting from : Rs 7,82,300 <br>
+                Fuel Economy (P): 17 km/l<br>
+                Fuel Economy (D): 23 km/l
+
+            </div>
+        </div>
+    </a>
+    <br><br>
+    <script type="text/javascript">
+        var slide_index = 1;
+        displaySlides(slide_index);
+
+        function nextSlide(n) {
+            displaySlides(slide_index += n);
+        }
+
+        function currentSlide(n) {
+            displaySlides(slide_index = n);
+        }
+
+        function displaySlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("showSlide");
+            if (n > slides.length) { slide_index = 1 }
+            if (n < 1) { slide_index = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slide_index - 1].style.display = "block";
+        }  
+    </script> <br><br><br>
+
+</body>
+
+</html>

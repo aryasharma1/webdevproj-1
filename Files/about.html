@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>
+        Feels like ford
+    </title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        div.container {
+            top: 0%;
+            width: 100%;
+            height: 20px;
+            position: fixed;
+            font-family: Rubik;
+            margin: 0 auto;
+            padding: 2em 3em;
+            text-align: center;
+        }
+
+        div.container a {
+            color: #FFF;
+            text-decoration: none;
+            font: 20px Rubik;
+            margin: 0px 20px;
+            padding: 10px 10px;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
+        }
+
+        .blue {
+            background: #004377;
+        }
+
+        /* Circle behind */
+        div.circleBehind a:before,
+        div.circleBehind a:after {
+            position: absolute;
+            top: 22px;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            border: 4px solid orange;
+            transform: translateX(-50%) translateY(-50%) scale(0.8);
+            border-radius: 50%;
+            background: transparent;
+            content: "";
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: -1;
+        }
+
+        div.circleBehind a:after {
+            border-width: 2px;
+            transition: all 0.4s;
+        }
+
+        div.circleBehind a:hover:before {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+
+        div.circleBehind a:hover:after {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-50%) scale(1.3);
+        }
+
+        div.container img {
+            height: 123%;
+            width: 124%;
+            left: 0%;
+            top: 0%;
+            width: 13.1%;
+            position: fixed;
+            height: 84px;
+
+
+
+
+
+        }
+
+        .m1 {
+            background-image: url("img/body/family1.jpg");
+
+            background-size: cover;
+
+        }
+
+        .m2 {
+            font-family: muli;
+            font-size: 20px;
+
+        }
+
+        .m3 {
+            background-image: url("img/body/family2.jpg");
+            height: 50%;
+            width: 50%;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.9);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body link="white" vlink="white">
+    <div class="container blue circleBehind">
+        <center>
+            <img src="img/body/logo.jpg">
+            <a href="web.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="models.html">MODELS</a>
+            <a href="service.html">SERVICE</a>
+            <a href="mailto:aryasharma069@gmail.com">CONTACT</a>
+        </center>
+    </div>
+
+    <div class="m1">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+    <div class="m2">
+        <center>
+            <div class="m3"></div>
+            <div class="m4">
+                <p style="font-size:30px; font-family:Century gothic;">Family</p>
+                It's a big word.<br>
+
+                Often used by corporations inviting you to be a part of 'their' <br>family.<br>
+                Or insisting, they're part of yours. But what does family really mean?<br><br>
+
+                For us, it's simple. It means always giving your best. And sticking to your word, no matter
+                what.<br><br>
+
+                Like telling you your service cost in advance. And ensuring you pay just that.<br><br>
+                Or giving you one of our cars, if yours takes over a day to service.<br>
+                It means treasuring your time, Protecting you.<br><br>
+
+                We don't just say family, we act like one.<br>
+                Which is why, we put our family name on every car we make.<br>
+                <br>
+                Because this is personal.<br>
+            </div>
+        </center><br>
+        <p align="right">
+            <span style="font-size:30px; font-family:Century gothic;">45 Minutes Car Delivery</span><br>
+            No one should have to wait for good things! That’s why we promise that we’ll never make you wait to become a
+            part of the family. With Ford, you’re sure to get your car delivered in less time than a food order.
+            <br>
+        </p>
+        <hr width="80%" color="black" noshade>
+        <span style="font-size:30px; font-family:Century gothic;">Real-Time Service Update</span><br>
+        Service should never be a time for uncertainty. We’ll always keep you at peace with regular updates, the entire
+        time your car is with us. After all, family never keeps you in the dark.
+        <br>
+        <hr width="80%" color="black" noshade>
+        <p align="right">
+            <span style="font-size:30px; font-family:Century gothic;">Service Price Promise</span><br>
+            Family never leaves you guessing, and neither will we. Now you can calculate your service cost and exactly
+            how much it will cost to replace your car’s parts; even before you go to the service centre.
+            <br>
+            <hr width="80%" color="black" noshade>
+        </p>
+        <span style="font-size:30px; font-family:Century gothic;">Free Pickup and Drop</span><br>
+        No more wasted weekends. When your car needs service, we’ll pick up it from your doorstep and drop it off when
+        the service is done. Because like family, we understand the value of your time.
+    </div>
+    <br><br>
+    <hr width="80%" color="black" noshade>
+    <p align="center" style="font-family:Century gothic; font-size:25px;">
+        Get your free service now !!!
+    </p>
+    <center>
+        <a href="service.html"
+            style="box-shadow:0 13px 24px rgba(0,0,0,0.9); font-family:muli; font-size:20px; background-color:green; padding:10px;">click
+            here</a>
+    </center>
+    <br><br>
+
+</html>
