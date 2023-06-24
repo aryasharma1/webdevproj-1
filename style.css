@@ -6,8 +6,12 @@ body{
   src: url("font/muli-regular-webfont.woff") format("woff");
 }
 @font-face {
+  font-family: "Cuntury gothic";
+  src: url("font/centurygothic-webfont.woff") format("woff");
+	  }
+@font-face {
   font-family: "Rubik";
-  src: url("font/rubik-regular-webfont") format("woff");
+  src: url("font/rubik-regular-webfont.woff") format("woff");
 	  }
 .m1{
 	background-image:url("img/body/f1.jpg");
